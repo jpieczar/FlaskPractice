@@ -1,0 +1,16 @@
+.heading {
+	color: green;
+	margin-left: 50px;
+	font-family: 'Comic Sans MS', cursive;
+	text-shadow: 3px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.hold {
+	justify-content: center;
+	width: 500px;
+	height: 600px;
+	border: 10px solid blue;
+	background-color: cyan;
+	margin:0 auto;
+	box-shadow: 25px 25px 15px black;
+}

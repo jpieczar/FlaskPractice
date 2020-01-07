@@ -1,12 +1,6 @@
-<html>
-    <head>
-        <title>
-            About
-        </title>
-    </head>
-    <body>
-        <h1>About Page.</h1>
-        <p>This is a really great ABOUT page!!!</p>
-        <a href='/home'>Home</a>
-    </body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+    <h1 class='heading'>About Page.</h1>
+    <a href='/home'>Home</a>
+    <p>This is the boring about page.</p>
+{% endblock content %}
