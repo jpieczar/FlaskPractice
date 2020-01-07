@@ -1,0 +1,36 @@
+### Notes on how to run flask stuff.
+
+    To simply run your stuff:
+    $> export FLASK_APP=filename.py
+    $> flask run
+    -or-
+    $> export FLASK_DEBUG=1
+    $> flask run
+    -or-
+    $> python3 filename.py
+    (Only if:
+        if __name == "__main__":
+            app.run(debug.True)
+    exists at the bottom of the file.)
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    $> pip install flask (Try pip3.)
+    $> mkdir myProject
+    $> cd myProject
+    $> python3 -m venv venv (Creates a virtual environment.)
+        (You can name the 2nd 'venv' something else.)
+        (This creates a dir where the environment files are stored.)
+    
+    (You might have to download and install 'virtualenv'.)
+
+    $> virtualenv venv (Creates a virtual environment.)
+    $> source venv/bin/activate (Activate the environment.)
+    (venv) $>
+
+    (venv) $> pip install flask (Installs flask.)
+    (venv) $> python3
+    >>>> import flask
+    >>>>
+    "Ctrl + d" (As there are no errors, it means that flask is installed
+    and we can exit.)
