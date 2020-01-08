@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1 class='heading'>About Page.</h1>
-    <a href='/home'>Home</a>
+    <a href="{{ url_for('home')}}">Home</a>
     <p>This is the boring about page.</p>
 {% endblock content %}

@@ -1,9 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1 class='heading'>Home Page</h1>
-    <a href='/about'>About</a>
-    <a href='/login'>Login</a>
-    <a href='/register'>Register</a>
+    <a href="{{ url_for('about')}}">About</a>
+    <a href="{{ url_for('login')}}">Login</a>
+    <a href="{{ url_for('register')}}">Register</a>
     {% for post in posts %}
     <div class='hold2'>
         <h3 class='heading'>{{ post.title }}</h1>
