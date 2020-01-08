@@ -15,6 +15,7 @@
 
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+    # Below deals with setting up an environment.
     $> pip install flask (Try pip3.)
     $> mkdir myProject
     $> cd myProject
@@ -34,3 +35,19 @@
     >>>>
     "Ctrl + d" (As there are no errors, it means that flask is installed
     and we can exit.)
+
+### Forms
+
+    # In order to get forms you first have to install Flask-wtf.
+    $> pip3 install flask-wtf
+
+### SECRET_KEY
+
+    # Prevents forgery attacks.
+    $> python3
+    Python 3.7.6 (default, Jan  6 2020, 08:51:01) 
+    [Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> import secrets
+    >>> secrets.token_hex(16)
+    '9077b574209596b53e2e80d97bd88043'

@@ -14,3 +14,9 @@
 	margin:0 auto;
 	box-shadow: 25px 25px 15px black;
 }
+
+.hold2 {
+	border: 5px solid gray;
+	background-color: white;
+	margin:0 auto;
+}
