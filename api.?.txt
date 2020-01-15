@@ -1,0 +1,6 @@
+An API is an Application Programming Interface.
+This acts as a messenger between the frontend and backend.
+
+Think of an API as a waiter.
+He communicates your order (fronend request), to the kitchen (backend).
+Following this, you get your food (What you were looking for).
