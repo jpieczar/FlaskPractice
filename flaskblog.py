@@ -52,8 +52,12 @@ def register():
 def login():
     form = LoginForm()
     if form.validate_on_submit():
-        flash(f"Logged in!", 'success')
-        return redirect(url_for('home'))
+        if form.email.data == "jeansthebeans@mail.com" and form.password.data == "qaz":
+            flash(f"Logged in!", 'success')
+            return redirect(url_for('home'))
+        else:
+            flash(f"Login unsuccessful!", 'danger')
+            # return redirect(url_for('register')) # This is if you want to send them to the registration page.
     return render_template("login.html", title="Login", form=form)
 
 if __name__ == '__main__':
